@@ -1,0 +1,5 @@
+  - name: Install base packages
+    apt:
+      name:
+        - htop
+        - tmux
