@@ -13,3 +13,5 @@
 
     roles:
       - role: gantsign.oh-my-zsh
+        users:
+          - username: chris
