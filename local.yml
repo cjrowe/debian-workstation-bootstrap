@@ -10,3 +10,6 @@
 
     tasks:
       - include: tasks/base-packages.yml
+
+    roles:
+      - role: gantsign.oh-my-zsh
