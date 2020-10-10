@@ -11,6 +11,7 @@
     tasks:
       - include: tasks/users.yml
       - include: tasks/base-packages.yml
+      - include: tasks/cron.yml
       
     roles:
       - role: gantsign.oh-my-zsh
