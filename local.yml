@@ -9,8 +9,9 @@
         changed_when: false
 
     tasks:
+      - include: tasks/users.yml
       - include: tasks/base-packages.yml
-
+      
     roles:
       - role: gantsign.oh-my-zsh
         users:
