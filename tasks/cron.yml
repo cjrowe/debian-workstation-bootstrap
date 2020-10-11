@@ -1,2 +1,8 @@
+  - name: create ansible-pull log directory
+    file:
+      path: /var/log/ansible-pull
+      state: directory
+      owner: ansible
+
   - name: install cron job (ansible-pull)
     cron: user="ansible" name="ansible provision" minute="*/10" job="/usr/bin/ansible-pull -o -U https://github.com/cjrowe/debian-workstation-bootstrap.git >> /var/log/ansible-pull/output_$(date +"%Y_%m_%d").log"
