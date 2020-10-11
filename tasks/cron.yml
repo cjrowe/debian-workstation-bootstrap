@@ -1,6 +1,6 @@
   - name: ensure cron is installed
     apt:
-      name: cron
+      name: anacron
       state: present
 
   - name: create ansible-pull log directory
