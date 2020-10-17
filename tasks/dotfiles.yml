@@ -1,7 +1,7 @@
   - name: ensure required packages are present
     apt:
       name: ['git', 'stow']
-    state: present
+      state: present
 
   - name: checkout dotfiles repository
     git:
