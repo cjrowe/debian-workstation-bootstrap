@@ -20,3 +20,8 @@
       repo: https://github.com/cjrowe/st
       version: 0.8.4
       dest: /home/chris/.suckless/st
+
+  - name: clone dwmblocks
+    git:
+      repo: https://github.com/cjrowe/dwmblocks
+      dest: /home/chris/.suckless/dwmblocks
