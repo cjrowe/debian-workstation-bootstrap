@@ -7,3 +7,9 @@
     git:
       repo: git@github.com:cjrowe/dotfiles.git
       dest: /home/chris/.dotfiles
+
+  - name: "Symlink dotfiles"
+    shell: stow -d ~/.dotfiles -t ~/ {{ item }}
+    with_items:
+      - tmux
+      - vim
