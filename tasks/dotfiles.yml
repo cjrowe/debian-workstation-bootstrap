@@ -1,0 +1,9 @@
+  - name: ensure required packages are present
+    apt:
+      name: ['git', 'stow']
+    state: present
+
+  - name: checkout dotfiles repository
+    git:
+      repo: git@github.com:cjrowe/dotfiles.git
+      dest: /home/chris/.dotfiles
