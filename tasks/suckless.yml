@@ -1,0 +1,22 @@
+  - name: ensure prequisite packages are installed
+    apt:
+      name: ['libx11-dev', 'libxft-dev', 'libxinerama-dev']
+      state: present
+
+  - name: clone dwm
+    git:
+      repo: https://github.com/cjrowe/dwm
+      version: 6.2
+      dest: /home/chris/.suckless/dwm
+
+  - name: clone dmenu
+    git:
+      repo: https://github.com/cjrowe/dmenu
+      version: 5.0
+      dest: /home/chris/.suckless/dmenu
+
+  - name: clone st
+    git:
+      repo: https://github.com/cjrowe/st
+      version: 0.8.4
+      dest: /home/chris/.suckless/st

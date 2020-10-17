@@ -9,7 +9,7 @@
       dest: /home/chris/.dotfiles
 
   - name: "Symlink dotfiles"
-    shell: stow -d ~/.dotfiles -t ~/ {{ item }}
+    shell: stow -d /home/chris/.dotfiles -t /home/chris {{ item }}
     with_items:
       - tmux
       - vim

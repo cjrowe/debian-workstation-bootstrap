@@ -13,6 +13,7 @@
       - include: tasks/base-packages.yml
       - include: tasks/cron.yml
       - include: tasks/dotfiles.yml
+      - include: tasks/suckless.yml
 
     roles:
       - role: gantsign.oh-my-zsh
