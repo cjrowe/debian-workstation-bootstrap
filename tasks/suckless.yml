@@ -4,24 +4,28 @@
       state: present
 
   - name: clone dwm
+    become_user: chris
     git:
       repo: https://github.com/cjrowe/dwm
       version: 6.2
       dest: /home/chris/.suckless/dwm
 
   - name: clone dmenu
+    become_user: chris
     git:
       repo: https://github.com/cjrowe/dmenu
       version: 5.0
       dest: /home/chris/.suckless/dmenu
 
   - name: clone st
+    become_user: chris
     git:
       repo: https://github.com/cjrowe/st
       version: 0.8.4
       dest: /home/chris/.suckless/st
 
   - name: clone dwmblocks
+    become_user: chris
     git:
       repo: https://github.com/cjrowe/dwmblocks
       dest: /home/chris/.suckless/dwmblocks
