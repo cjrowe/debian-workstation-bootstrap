@@ -5,7 +5,7 @@
 
   - name: checkout dotfiles repository
     git:
-      repo: git@github.com:cjrowe/dotfiles.git
+      repo: https://github.com/cjrowe/dotfiles.git
       dest: /home/chris/.dotfiles
 
   - name: "Symlink dotfiles"
