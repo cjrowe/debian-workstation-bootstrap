@@ -12,7 +12,8 @@
       - include: tasks/users.yml
       - include: tasks/base-packages.yml
       - include: tasks/cron.yml
-      
+      - include: tasks/dotfiles.yml
+
     roles:
       - role: gantsign.oh-my-zsh
         users:
