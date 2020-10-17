@@ -4,11 +4,13 @@
       state: present
 
   - name: checkout dotfiles repository
+    become_user: chris
     git:
       repo: https://github.com/cjrowe/dotfiles.git
       dest: /home/chris/.dotfiles
 
   - name: "Symlink dotfiles"
+    become_user: chris
     shell: stow -d /home/chris/.dotfiles -t /home/chris {{ item }}
     with_items:
       - tmux
