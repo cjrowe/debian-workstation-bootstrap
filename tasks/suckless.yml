@@ -6,26 +6,26 @@
   - name: clone dwm
     become_user: chris
     git:
-      repo: https://github.com/cjrowe/dwm
+      repo: https://github.com/cjrowe/dwm.git
       version: 6.2
       dest: /home/chris/.suckless/dwm
 
   - name: clone dmenu
     become_user: chris
     git:
-      repo: https://github.com/cjrowe/dmenu
+      repo: https://github.com/cjrowe/dmenu.git
       version: 5.0
       dest: /home/chris/.suckless/dmenu
 
   - name: clone st
     become_user: chris
     git:
-      repo: https://github.com/cjrowe/st
+      repo: https://github.com/cjrowe/st.git
       version: 0.8.4
       dest: /home/chris/.suckless/st
 
   - name: clone dwmblocks
     become_user: chris
     git:
-      repo: https://github.com/cjrowe/dwmblocks
+      repo: https://github.com/cjrowe/dwmblocks.git
       dest: /home/chris/.suckless/dwmblocks
