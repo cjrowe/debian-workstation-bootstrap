@@ -1,6 +1,6 @@
   - name: ensure prequisite packages are installed
     apt:
-      name: ['libx11-dev', 'libxft-dev', 'libxinerama-dev']
+      name: ['libx11-dev', 'libxft-dev', 'libxinerama-dev', 'make']
       state: present
 
   - name: clone dwm
