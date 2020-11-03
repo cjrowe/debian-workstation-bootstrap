@@ -29,3 +29,9 @@
     git:
       repo: https://github.com/cjrowe/dwmblocks.git
       dest: /home/chris/.suckless/dwmblocks
+
+  - name: make st
+    become: yes
+    make:
+      chdir: /home/chris/.suckless/st
+      target: install
